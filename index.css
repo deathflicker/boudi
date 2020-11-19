@@ -1,0 +1,267 @@
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+  background-color: rgba(255,0,0,0.3);
+  padding: 0;
+  margin: 0;
+}
+
+#card {
+  background-color: transparent;
+  width: 45%;
+  height: 480px;
+  perspective: 1500px;
+  margin-top: 20%;
+}
+
+#card-front {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left:105%;
+  top: 20%;
+  color: white;
+  transform-style: preserve-3d;
+  transition: transform 2.5s;
+  transform-origin:left;
+  
+  box-shadow: 2px 2px 30px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.5);
+   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  
+
+
+}
+
+#front2 {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  backface-visibility: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 2.1em;
+  font-weight: bold;
+  background-image: url(flowers.jpg);
+  background-size:cover; 
+  
+  
+
+
+}
+
+#front3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:white;
+  backface-visibility: hidden;
+  color: black;
+  transform: rotateY(180deg);
+
+
+
+}
+
+#card:hover #card-front {
+  transform:rotateY(-180deg);
+}
+
+#card-inside{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left:105%;
+  top:-83.5%;
+  background-color:white;
+  text-align: center;
+  font-size: 1.1;
+  line-height: 1.4;
+  font-family: 'Nobile';
+  font-style:italic;
+   box-shadow: 2px 2px 30px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.5);
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  
+
+  
+
+
+}
+#open{
+  position: absolute;
+  bottom:0em;
+  right: -0.4em;
+  height: 10%;
+  width: 8%;
+
+  background-color: red;
+   box-shadow: 2px 2px 30px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.5);
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  
+
+}
+
+#close{
+position: absolute;
+  bottom:0em;
+  left: -0.4em;
+  height: 10%;
+  width: 8%;
+
+  background-color: red;
+   box-shadow: 2px 2px 30px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.5);
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 2px 2px 30px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .5);
+  
+
+}
+
+#text1 {
+  
+  border: none;
+  font-family: 'Nobile', sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  text-shadow: 
+      4px 4px 0px rgba(0, 0, 0, .15),
+      1px 1px 0 rgba(255, 200, 200, 255),
+      2px 2px 0 rgba(255, 150, 150, 255),
+      3px 3px 0 rgba(255, 125, 125, 255);
+  color: #FFF;
+}
+
+#text3 {
+  line-height: 2;
+  max-width: 90%;
+  margin-left: 2%;
+}
+#image2 {
+ position: fixed; 
+width: 80%;
+height: 80%;
+left:40px;
+top: 35px;
+
+
+}
+
+
+
+#animation {
+  position:relative;
+  width:100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  
+  background-image: url(fire1.gif);
+  background-size: cover;
+  color:white;
+
+  }
+
+#anitext {
+  top: 15%;
+  left: 100%;
+  /transform: translate(-60%, -40%);/
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 400%;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: center;
+  font-family: sans-serif;
+  text-shadow: 30px 5px 30px brown; 
+}
+
+#zmr {
+  
+  position: absolute;  
+  width: 50%;
+  height: 100%;
+  right: 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+#zmr1 {
+  position: inherit;
+  width: 65%;
+}
+
+#zmr5 {
+  position: absolute;
+  right: 35%;
+  top: 6%;
+  height: 100%;
+  width: 110%;
+}
+
+
+#box span {
+  position:absolute;
+  top: 200%;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  
+
+
+}
+
+#balloons{
+  position: fixed;
+  bottom: 80%;
+  z-index: 5;
+}
+
+#popper{
+  position: fixed;
+  bottom: -100%;
+  transform: rotate(-40deg);
+  width: 50%;
+  left: 25%;
+  animation: popper 5s linear;
+}
+
+@keyframes popper{
+  0%{
+    bottom: -100%;
+  }
+  10%{
+    bottom: 20%;
+  }
+  20%{
+    bottom: 10%;
+  }
+  40%{
+    bottom: 5%;
+  }
+  60%{
+    bottom: -5%;
+  }
+  80%{
+    bottom: -10%;
+  }
+  100%{
+    bottom: -100%;
+  }
+}

@@ -1,56 +1,110 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            NoobOs
-        </title>
-        <style>
-            body{
-                background-color: black;
-                color: darkslategrey;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                height: 100%;
-                width: 100%;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body scroll="no" style="overflow: hidden">
-        <meta 
-             name='viewport' 
-             content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
-        />
-        <img id="logo" src="mainLogo.png" alt="NOOB">
-        <br>
-        <br>
-        <label id="output" style="font-family: 'Courier New', Courier, monospace;
-        font-size: 100%; color: white; max-width: 90%;"><a style="color: #e74c3c;">Check</a>ing Brow<a style="color: #e74c3c;">ser</a>...</label>
-        
-    </body>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1 ">
+  <link rel="stylesheet" type="text/css" href="index.css">
+ 
+	<title>3dcard</title>
+</head>
+<body scroll="no" style="overflow: hidden">
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=1"/>
 
 
-    <script type="text/javascript">
-        
-        let output = document.getElementById('output');
-        let logo = document.getElementById('logo');
-        
 
-        function checkBrowser(){
-            if(window.innerWidth>=1152)
-            {
-                window.location.href='noobOs.html';
-            }
-            else
-            {
-                logo.style.display='none';
-                output.style.fontSize = '150%';
-                output.textContent = 'OOPS! You are not on a Windows or Mac. noobOs is not made for mobile devices.';
-            }
-        }
+  <div id="container">
 
-        setTimeout(checkBrowser, 1000);
+    <!-- Top Animation Fire crackers-->
+    <div id="animation">
+      <h1 id="anitext">Happy <br>Birthday<br> Karishma</h1>
+      <div id="zmr">
+        <img id="zmr1" src="zmr3.png">
+      </div>
+    </div>
 
-    </script>
+
+    <div id="imgContainer">
+    	hi
+    </div>
+    
+
+	<div id="card">
+   <div id="card-front">
+
+     <div id="front2" onmouseenter="playSong()" onclick="playSong()">
+      <img id="zmr5" src="zmr5.gif">
+       
+      <p id="text1">HAPPY      BIRTHDAY  !!</p>
+      <button id="open" onclick="one_card()" >&#10148;</button>
+    </div>
+
+<div id="front3">
+  <img id="image2" src="flower1.jpeg">
+  <button id="close" onclick="close_card()" >&#10148;</button>
+  
+</div>
+       
+      
+      
+
+    </div>
+
+<div id="card-inside">
+  <p id="text3"><br><br>না ভুলিনি.. ঠিকই মনে আছে...
+
+Birthday wish তো সবাই করছে তাই ভাবলাম একটু আলাদা কিছু করি...
+প্রথমে ভাবলাম যে শুধু &nbsp; Happy Birthday wish করবো.. তারপর মনে হলো না একটু special ভাবে বলা যাক।
+
+ তাই এটা বানানো..
+
+Gift টা দেখে এখন যেমন হাসছিস...
+তোর মুখের এই হাসি টা যেন সারা বছর এভাবেই থাকে.. আজকের এই দিনে সবকিছু হোক নতুন করে,
+সুখের সৃতি টুকু থাক কাছে, দুঃখ গুলো যাক দূরে ।
+<br>(( শুভ জন্মদিন ))
+
+</p>
+
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+
+  
+
+<img src="balloons.gif" id="balloons">
+<img src="gif2.gif" id="popper">
+
+
+
+<audio controls autoplay style="display: none;">
+  <source src="popperSound.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
+<audio controls id="omShanti" loop style="display: none;">
+  <source src="omShanti.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+
+
+<script type="text/javascript" src="index.js"></script>
+
+
+
+-->
+</body>
 </html>
