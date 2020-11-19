@@ -1,16 +1,16 @@
 let omShanti =  document.getElementById('omShanti');
-let popper = document.getElementById('popper');
+let myPopper = document.getElementById('myPopper');
 let arpanFirst = document.getElementById('arpanFirst');
+let popper = document.getElementById('popper');
 
 function playPop()
 {
-	popper.play();
+	myPopper.play();
 	arpanFirst.style.display = 'none';
+	popper.className = 'popperShow';
 }
 
 
 function playSong(){
 	omShanti.play();
 }
-
-popBtn.click();
