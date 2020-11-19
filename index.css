@@ -239,6 +239,9 @@ top: 35px;
   transform: rotate(-40deg);
   width: 50%;
   left: 25%;
+}
+
+.popperShow{
   animation: popper 5s linear;
 }
 
